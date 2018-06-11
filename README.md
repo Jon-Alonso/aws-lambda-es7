@@ -32,21 +32,22 @@ Clone, fork or download the project
 $ git clone git@github.com:JohnAlonso/aws-lambda-es7.git
 $ cd aws-lambda-es7 && npm install
 ```
-#####  Mocking a Lambda event
-In order to test how Lambda is going to `handle` a request, a default SNS event Lambda is provided in `mock/SNS-event.json` (Feel free to create new or override the default event).
-The following command will execute the handler method from the `index.js` and inject the `context` and the AWS `event`.
-```sh
-$ npm run mock
-```
 
 #####  Configuration
-You can create a `src/Config/local.js` configuration file for local development and access environment variables by importing the `Config`.
+Create a `src/Config/local.js` configuration file for local development and access environment variables by importing the `Config`.
 ```javascript
 import Config from './src/Config'
 
 const config = Config.load()
 // Access config variables
 console.log(config.service.example)
+```
+
+#####  Mocking a Lambda event
+In order to test how Lambda is going to `handle` a request, a default SNS event Lambda is provided in `mock/SNS-event.json` (Feel free to create new or override the default event).
+The following command will execute the handler method from the `index.js` and inject the `context` and the AWS `event`.
+```sh
+$ npm run mock
 ```
 
 #####  Testing
