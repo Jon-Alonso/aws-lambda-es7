@@ -1,0 +1,22 @@
+{
+    "Records": [
+        {
+            "EventSource": "aws:sns",
+            "EventVersion": "1.0",
+            "EventSubscriptionArn": "arn:aws:sns:ap-southeast-2:1234:test:f7992c79",
+            "Sns": {
+                "Type": "Notification",
+                "MessageId": "asdf-2342-asdfasd-23423",
+                "TopicArn": "arn:aws:sns:ap-southeast-2:123456789:test",
+                "Subject": null,
+                "Message": "{\"word\":\"demo\"}",
+                "Timestamp": "2018-12-06T07:54:39.769Z",
+                "SignatureVersion": "1",
+                "Signature": "asdfghjkl123456789",
+                "SigningCertUrl": "https://sns.ap-southeast-2.amazonaws.com/SimpleNotificationService-asdfghjkl.pem",
+                "UnsubscribeUrl": "https://sns.ap-southeast-2.amazonaws.com/?Action12345",
+                "MessageAttributes": {}
+            }
+        }
+    ]
+}

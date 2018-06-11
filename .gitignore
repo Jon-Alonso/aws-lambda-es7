@@ -1,0 +1,6 @@
+.DS_Store
+dist/
+*.zip
+src/config/local.js
+node_modules/
+.vscode
